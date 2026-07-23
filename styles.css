@@ -67,9 +67,7 @@ body {
   height: auto;
   object-fit: contain;
   margin: 0 auto;
-  filter:
-    drop-shadow(0 0 18px rgba(255, 0, 0, .28))
-    drop-shadow(0 0 44px rgba(255, 0, 0, .12));
+
   animation: avatar-breathe 3.2s ease-in-out infinite;
 }
 
