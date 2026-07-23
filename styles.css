@@ -15,6 +15,13 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -48,7 +55,8 @@ body {
 }
 
 .shell {
-  width: min(920px, calc(100% - 28px));
+  width: min(920px, calc(100vw - 28px));
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 0 42px;
 }
@@ -61,7 +69,7 @@ body {
 .avatar-stage {
   position: relative;
   width: min(470px, 94vw);
-  margin: -12px auto -10px;
+  margin: -12px auto 18px;
   overflow: visible;
   isolation: isolate;
   animation: avatar-float 5s ease-in-out infinite;
@@ -138,7 +146,9 @@ body {
 }
 
 h1 {
-  margin: -4px 0 4px;
+  position: relative;
+  z-index: 4;
+  margin: 8px 0 4px;
   font-size: clamp(3rem, 11vw, 6.7rem);
   line-height: .9;
   letter-spacing: -.055em;
@@ -375,8 +385,15 @@ footer p {
   }
 
   .avatar-stage {
-    width: min(410px, 100vw);
-    margin-top: -10px;
+    width: min(390px, calc(100vw - 18px));
+    max-width: 100%;
+    margin: -8px auto 16px;
+  }
+
+  h1 {
+    margin-top: 4px;
+    font-size: clamp(2.45rem, 14vw, 4.6rem);
+    letter-spacing: -.06em;
   }
 
   .tagline {
@@ -411,6 +428,36 @@ footer p {
 
   footer p {
     letter-spacing: .3em;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .shell {
+    width: calc(100vw - 12px);
+  }
+
+  .avatar-stage {
+    width: calc(100vw - 14px);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    letter-spacing: -.055em;
+  }
+
+  .tagline {
+    font-size: .66rem;
+    letter-spacing: .12em;
+  }
+
+  .social-grid {
+    gap: 7px;
+  }
+
+  .social-card {
+    min-width: 0;
+    padding-inline: 5px;
   }
 }
 
