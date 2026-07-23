@@ -32,10 +32,10 @@ body {
 }
 
 .page-bg {
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    background: #000;
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: #000;
 }
 
 .shell {
@@ -67,12 +67,13 @@ body {
   height: auto;
   object-fit: contain;
   margin: 0 auto;
-  filter:
-    drop-shadow(0 0 18px rgba(255, 0, 0, .28))
-    drop-shadow(0 0 44px rgba(255, 0, 0, .12));
+  filter: none;
   animation: avatar-breathe 3.2s ease-in-out infinite;
 }
 
+.avatar-glow {
+  display: none;
+}
 
 .avatar-scan {
   position: absolute;
@@ -96,20 +97,12 @@ body {
 @keyframes avatar-breathe {
   0%, 100% {
     transform: scale(1);
-    filter:
-      drop-shadow(0 0 18px rgba(255, 0, 0, .25))
-      drop-shadow(0 0 42px rgba(255, 0, 0, .10));
   }
   50% {
     transform: scale(1.012);
-    filter:
-      drop-shadow(0 0 27px rgba(255, 0, 0, .42))
-      drop-shadow(0 0 58px rgba(255, 0, 0, .18));
   }
 }
 
-@keyframes glow-pulse {
-  0%, 100% { opacity: .55; transform: scale(.96); }
   50% { opacity: 1; transform: scale(1.06); }
 }
 
