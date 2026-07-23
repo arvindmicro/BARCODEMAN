@@ -67,19 +67,12 @@ body {
   height: auto;
   object-fit: contain;
   margin: 0 auto;
-
+  filter:
+    drop-shadow(0 0 18px rgba(255, 0, 0, .28))
+    drop-shadow(0 0 44px rgba(255, 0, 0, .12));
   animation: avatar-breathe 3.2s ease-in-out infinite;
 }
 
-.avatar-glow {
-  position: absolute;
-  z-index: 1;
-  inset: 12% 10%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 0, 0, .34), rgba(255, 0, 0, .08) 42%, transparent 72%);
-  filter: blur(24px);
-  animation: glow-pulse 2.8s ease-in-out infinite;
-}
 
 .avatar-scan {
   position: absolute;
