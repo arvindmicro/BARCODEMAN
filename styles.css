@@ -220,7 +220,6 @@ h2::after {
   font-size: 1.08rem;
   font-weight: 800;
   letter-spacing: .07em;
-  text-transform: uppercase;
 }
 
 .brand-mark {
@@ -263,7 +262,6 @@ h2::after {
   align-items: center;
   gap: 10px;
   text-align: center;
-  text-transform: uppercase;
   font-size: .75rem;
   letter-spacing: .04em;
 }
@@ -283,6 +281,7 @@ h2::after {
 .x .social-icon { background: #111; border: 1px solid #555; }
 .tiktok .social-icon { background: #111; text-shadow: -2px 0 #00f2ea, 2px 0 #ff0050; }
 .youtube .social-icon { background: #ff0000; }
+.snapchat .social-icon { background: #F0F000; }
 
 .contact-card {
   margin-top: 16px;
