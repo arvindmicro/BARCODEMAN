@@ -233,12 +233,7 @@ h2::after {
   font-weight: 900;
 }
 
-.spotify .brand-mark { background: #1ed760; color: #000; }
-.apple .brand-mark { background: linear-gradient(145deg,#ff6680,#ff1f45); }
-.tidal .brand-mark { background: #fff; color: #000; }
-.amazon .brand-mark { background: #10a7df; color: #001722; }
-.youtube-music .brand-mark { background: #ff1010; }
-.soundcloud .brand-mark { background: #ff5a00; }
+
 
 .arrow {
   color: var(--red);
