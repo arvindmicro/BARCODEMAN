@@ -271,12 +271,6 @@ h2::after {
   font-weight: 900;
 }
 
-.instagram .social-icon { background: linear-gradient(135deg,#7c3aed,#ec4899,#f59e0b); }
-.facebook .social-icon { background: #1877f2; }
-.x .social-icon { background: #111; border: 1px solid #555; }
-.tiktok .social-icon { background: #111; text-shadow: -2px 0 #00f2ea, 2px 0 #ff0050; }
-.youtube .social-icon { background: #ff0000; }
-.snapchat .social-icon { background: #F0F000; }
 
 .contact-card {
   margin-top: 16px;
