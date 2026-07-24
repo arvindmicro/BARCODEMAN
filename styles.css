@@ -286,6 +286,7 @@ h2::after {
 .x .social-icon { background: #111; border: 1px solid #555; }
 .tiktok .social-icon { background: #111; text-shadow: -2px 0 #00f2ea, 2px 0 #ff0050; }
 .youtube .social-icon { background: #ff0000; }
+.snapchat .social-icon { background: #FFFF00; }
 
 .contact-card {
   margin-top: 16px;
